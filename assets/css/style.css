@@ -1,5 +1,9 @@
 :root {
   --cor-principal: #59a3ee;
+  --cor-hero:  #f1d577;
+  --cor-form-button: #f17fc5 ;
+   --cor-aside: #eee;
+    --cor-footer: #ed67cc;
   --padding-padrao: 10px 20px;
   --borda-arredondada: 10px;
 }
@@ -49,7 +53,7 @@ header nav a {
 .hero {
   text-align: center;
   padding: 20px 0;
-  background: #f1d577; /* amarelo */
+  background: var(--cor-hero); /* amarelo */
   color: #fff;
   margin-bottom: 20px;
 }
@@ -117,7 +121,7 @@ form textarea {
 
 form button {
   padding: 10px;
-  background: #f17fc5;
+  background:var(--cor-form-button);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -126,7 +130,7 @@ form button {
 
 /* Aside / Agenda */
 aside {
-  background: #eee;
+  background:var(--cor-aside);
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -137,7 +141,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   background: #eee;
-  color: #ed67cc;
+  color:var(--cor-footer);
 }
 
 footer a {
