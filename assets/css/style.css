@@ -1,3 +1,9 @@
+:root {
+  --cor-principal: #59a3ee;
+  --padding-padrao: 10px 20px;
+  --borda-arredondada: 10px;
+}
+
 /* Reset e corpo */
 body {
   font-family: Arial, sans-serif;
@@ -16,7 +22,7 @@ body {
 
 /* Header e navegação */
 header {
-  background: #eee;
+  background: var(--cor-principal);
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -25,7 +31,7 @@ header {
 
 header .logo {
   font-weight: bold;
-  color: #59a3ee; /* roxo */
+  color: var(--cor-principal); /* roxo */
 }
 
 header nav ul {
@@ -138,6 +144,55 @@ footer a {
   text-decoration: none;
   color: #59a3ee;
 }
+/* Deixa o fundo mais clean */
+header {
+  background: #fff;
+  border-bottom: 3px solid var(--cor-destaque);
+  padding: 15px 0;
+}
+
+/* Organiza o menu */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links do menu */
+header nav a {
+  position: relative;
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Linha animada embaixo */
+header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: var(--cor-principal);
+  transition: width 0.3s ease;
+  border-radius: 3px;
+}
+
+header nav a:hover {
+  color: var(--cor-principal);
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
 
 /* Responsivo */
 @media (max-width: 800px) {
@@ -151,3 +206,4 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+

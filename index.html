@@ -1,77 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arte & Cultura - Site Simples</title>
+
+  
   <link rel="stylesheet" href="assets/css/style.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
   <header>
     <div class="container">
-      <h1 class="logo">Arte & Cultura</h1>
+      <h1 class="logo animate__animated animate__fadeInLeft">Arte & Cultura</h1>
       <nav>
         <ul>
-          <li><a href="#destaques">Destaques</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#inscricao">Inscrição</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#destaques" class="animate__animated animate__fadeInDown">Destaques</a></li>
+          <li><a href="#sobre" class="animate__animated animate__fadeInDown animate__delay-1s">Sobre</a></li>
+          <li><a href="#inscricao" class="animate__animated animate__fadeInDown animate__delay-2s">Inscrição</a></li>
+          <li><a href="#contato" class="animate__animated animate__fadeInDown animate__delay-3s">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-  <div class="container">
-    <h2>Bem-vindos à Mostra de Arte & Cultura!</h2>
-    <p>SE INSCREVA EM ALGUM EVENTO CULTURAL💗.</p>
-    <a href="inscriçao.html">Quero me inscrever!</a>
-  </div>
-</section>
+  <section class="hero animate__animated animate__zoomIn">
+    <div class="container">
+      <h2>Bem-vindos à Mostra de Arte & Cultura!</h2>
+      <p>SE INSCREVA EM ALGUM EVENTO CULTURAL💗.</p>
+      <a href="inscriçao.html" class="animate__animated animate__pulse animate__infinite">Quero me inscrever!</a>
+    </div>
+  </section>
 
   <main class="container">
     <section id="destaques" class="cards">
-      <article class="card">
+      <article class="card animate__animated animate__fadeInUp">
         <img src="assets/img/image.png" alt="Instalação luminosa">
         <h3>Instalação Luminosa</h3>
         <p>Uma experiência visual divertida com luzes e cores.</p>
       </article>
-      <article class="card">
+      <article class="card animate__animated animate__fadeInUp animate__delay-1s">
         <img src="assets/img2/image.png" alt="Pintura contemporânea">
         <h3>Pintura Contemporânea</h3>
         <p>Obras vibrantes de artistas locais, cheias de criatividade.</p>
       </article>
-      <article class="card">
+      <article class="card animate__animated animate__fadeInUp animate__delay-2s">
         <img src="assets/img3/image.png" alt="Performance de dança">
         <h3>Performance e Dança</h3>
         <p>Apresentações que misturam tradição e modernidade.</p>
       </article>
     </section>
 
-    <section id="sobre">
+    <section id="sobre" class="animate__animated animate__fadeInLeft">
       <h2>Sobre a Mostra</h2>
       <p>Nosso site aproxima você da arte de forma divertida e interativa. Aqui você encontra artes visuais, dança, música e muito mais. 
         Queremos que todos se divirtam, aprendam e participem!</p>
       <p>Oficinas, debates e apresentações estão esperando por você. Cada obra foi escolhida 
         para inspirar e estimular a criatividade.</p>
-        <p>"A arte nos convida a ver o mundo de outro jeito.
+      <p>"A arte nos convida a ver o mundo de outro jeito.
              Cada cor, cada forma, cada som carrega uma história e um sentimento. 
              Aproximar-se da arte é permitir-se sentir, 
             imaginar e se conectar com experiências que vão além das palavras."</p>
     </section>
 
-    <aside>
+    <aside class="animate__animated animate__fadeInRight">
       <h2>Próximos eventos</h2>
       <ul>
-        <li><time datetime="2025-09-05">05/09</time> Exposições de arte comtemporânea da  Lygia Clark</li>
+        <li><time datetime="2025-09-05">05/09</time> Exposições de arte contemporânea da Lygia Clark</li>
         <li><time datetime="2025-09-12">12/09</time> Instalação luminosa</li>
         <li><time datetime="2025-09-19">19/09</time> Dança do ventre</li>
       </ul>
     </aside>
   </main>
 
-  <footer id="contato">
+  <footer id="contato" class="animate__animated animate__fadeInUp">
     <p>Contato: (11) 99999-9999 | contato@artecultura.com</p>
     <p>Siga-nos: <a href="#">Instagram</a> | <a href="#">YouTube</a> | <a href="#">Facebook</a></p>
     <p>2025 Arte & Cultura</p>
